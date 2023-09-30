@@ -20,34 +20,6 @@ To implement the API endpoints for the out-patient appointment system, you would
   },
   // Additional doctors
 ]
-
-To implement the API endpoints for the out-patient appointment system, you would typically use a web framework like Django or Flask for Python, or Express for Node.js. Below, I'll provide a basic outline of how you can structure the API.
-
-Doctors Listing:
-
-Endpoint: /api/doctors
-Method: GET
-Description: This endpoint will retrieve a list of doctors.
-Response Format:
-json
-Copy code
-[
-  {
-    "id": 1,
-    "name": "Dr. John Doe",
-    "specialty": "Cardiologist",
-    "available_slots": [
-      {
-        "day": "Monday",
-        "time": "18:00 - 20:00",
-        "max_patients": 5,
-        "available_patients": 3
-      },
-      // Additional slots for the week
-    ]
-  },
-  // Additional doctors
-]
 2.Doctor Detail Page:
   Endpoint: /api/doctors/<doctor_id>
   Method: GET
